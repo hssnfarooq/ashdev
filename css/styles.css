@@ -1,0 +1,293 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+   padding: 0.75rem;
+   color: #fff;
+   position: sticky;
+   top:0;
+   
+   z-index: 1;
+}
+
+.text-primary{
+
+    color:#93cb52;
+}
+
+.navbar ul {
+    display: flex;
+      list-style: none;
+      align-items: center;
+    
+
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.navbar ul li a {
+    color: #fff;
+    padding: 0.7rem;
+    margin : 0 0.25rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navbar ul li a:hover{
+    
+ background-color: #93cb52;
+ border-radius: 5px;
+ 
+}
+
+.showcase {
+    background: #333 url('../images/webdevelopershowcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.showcase .showcase-content{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /*Overlay*/
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.showcase .showcase-content .l-heading {
+    font-size: 4rem;
+    line-height: 2.0;
+
+
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+
+}
+
+#what {
+    margin-bottom: 120px;
+}
+.btn {
+    display:inline-block;
+    background-color: #93cb52;
+    color: #fff;
+    width: 120px;
+    padding: 0.70rem;
+    border-radius: 30px;
+    transition: all 0.5s;
+
+}
+.btn:hover {
+    background-color: black;
+    transform: scale(1.2);
+}
+
+#what .items .item i{
+   
+    
+    text-align: center;
+ 
+    color: #93cb52;
+   
+    margin-bottom: 0.70rem;
+}
+
+.container {
+    max-width: 1100px;
+  
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.container .m-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.items{
+    display: flex;
+    
+    
+    padding: 1rem;
+   
+    justify-content: center;
+    
+    
+}
+
+
+#what .items .item {
+
+    flex: 1;
+    text-align: center;
+}
+
+.container .heading {
+    text-align: left;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-size:28px;
+    font-weight: 500;
+    margin:0px 0 16px;
+    letter-spacing: 1px;
+  
+    text-transform: uppercase;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card {
+    background: #dff7ff;
+    background-image: linear-gradient(120deg, #e0f7ff, #dffff4);
+   border: #fff;
+  padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 10px 1px rgba(147,203,82,0.3);
+}
+
+.cards .card .cardimg {
+    
+     flex:0 0 130px; 
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.contact {
+    background-color: #303030;
+    color: #fff;
+}
+
+.contact .heading2{
+    text-align: center;
+
+    margin-bottom: 50px;
+} 
+
+.heading2 h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:42px;
+    font-weight: 100;
+    margin:0px 0 8px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid gray;
+    text-transform: uppercase;
+    padding: 1rem;
+    
+}
+
+.heading2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contactitems {
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.contactitems .contactitem {
+    background-color: #fff;
+    color: #000;
+  text-align: left;
+  box-shadow: 3px 3px 10px 1px rgba(248, 248, 248, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+   height: 400px;
+   margin: 1rem;
+   justify-content: center;
+   
+   transition: all 0.5s;
+
+}
+
+.contactitems .contactitem:hover {
+    box-shadow: 3px 3px 10px 1px rgba(248, 248, 248, 0.6);
+}
+
+
+
+
+.contactitems .contactitem  i {
+
+    text-align: center;
+   
+    color: #fff;
+    font-size: 14rem;
+    
+    
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   background:linear-gradient(135deg, #42e695 0%,#3bb2b8 100%);
+    margin-bottom: 0.70rem;
+    border-bottom: 1px solid #dffff4;
+    
+   
+}
+
+.contactitems .contactitem h2,
+.contactitems .contactitem p {
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactitems .contactitem h2 {
+    font-size:1.5rem ;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contactitems .contactitem p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
